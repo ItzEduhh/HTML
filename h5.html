@@ -2,55 +2,157 @@
 <html lang="pt-BR">
 
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML5</title>
+
+            <style>
+
+            body{
+                margin: 80px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                background-color: rgb(255, 193, 151);
+                background-image: linear-gradient(to right, rgb(255, 193, 151), rgb(180, 114, 114));
+            }
+
+            header{
+                color:rgb(170, 3, 3);
+                background-color: rgb(212, 154, 79);
+                text-align: center; 
+                font-size: 40px;
+            }
+
+            aside{
+                position: absolute;
+                width: 100px;
+                height: 200px;
+                border: 5px solid black;
+                padding: 10px;
+                right: 50px;
+                background-color: brown;
+                text-align: center;
+            }
+
+            section{
+                position: relative;
+                margin: 50px;
+                border: 5px solid black;
+                padding: 20px;
+                background-color: rgb(212, 154, 79);
+            }
+
+            #mdzs {
+                background-color: rgb(117, 28, 40);
+                margin: 5px;
+                border: 5px solid black;
+                padding: 5px;
+            }
+
+            #svsss {
+                background-color: rgb(117, 28, 40);
+                margin: 5px;
+                border: 5px solid black;
+                padding: 5px;
+            }
+
+            footer{
+                width: 300px;
+                height: 20px;
+                bottom: 15px;
+                position: relative;
+                background-color: rgb(212, 154, 79);
+            }
+
+            nav{
+                position:relative;
+                margin: 15px;
+                border: 5px solid black;
+                border-radius: 10px;
+                background-image: linear-gradient(to left, brown, rgb(212, 133, 41));
+                display: flex;
+                align-items: center;
+            }
+
+            #imgPP{
+                margin: 5px;
+                border: 5px solid black;
+            }
+
+            #imgFixedXie{
+                position: fixed;
+                top: 5px;
+                left: 5px;
+                border: 5px outset darkred;
+                background-color: white;    
+                border-radius: 10px; 
+            }
+
+            #imgFixedHua{
+                position: fixed;
+                top: 5px;
+                right: 5px;
+                border: 5px outset darkred;
+                background-color: white;    
+                border-radius: 10px; 
+            }
+            
+        </style>
     </head>
 
-    <style>
-
-        body{
-            margin: 80px;
-            background-color: rgb(255, 193, 151);
-        }
-
-        header{
-            color:rgb(170, 3, 3);
-            background-color: rgb(212, 154, 79);
-            text-align: center; 
-            font-size: 40px;
-        }
-
-        aside{
-            margin: 3;
-            position: fixed;
-            border: black;
-            padding: 10;
-            right: 0;
-            background-color: brown;
-        }
-        
-    </style>
+    
 
     <body>
         <header>
             <h1>TGCF WORLD</h1>
         </header>
 
-        
+        <div id="imgFixedXie">
+            <img src="imagens/xieChibi.jpg" alt="Imagem Xie Lian" width="65px" height="65px">
+        </div>
+
+        <div id="imgFixedHua">
+            <img src="imagens/huaChibi.jpg" alt="Imagem Hua Cheng" width="65px" height="65px">
+        </div>
+
+        <nav>
+            <img src="imagens/pp.jpg" alt="Imagem personagens" width="200" height="150" id="imgPP">
+
+            <ul>
+                <li><a href="">Coisa 1</a></li>
+                <li><a href="">Coisa 2</a></li>
+                <li><a href="">Coisa 3</a></li>
+            </ul>
+        </nav>
 
         <section id="noticias">
             <article id="mdzs">
                 <h3>Mo Dao Zu Shi</h3>
+                <p>
+                    Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto 
+                    Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto 
+                    Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto 
+                    Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto 
+                </p>
             </article>
 
             <article id="svsss">
                 <h3>Scums Villain's Self Saving System</h3>
+                <p>
+                    Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto 
+                    Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto 
+                    Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto 
+                    Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto Texto sobre o assunto 
+                </p>
             </article>
+
+            
         </section>
 
         <aside>
             <p>Gostaria de participar de discussões sobre TGCF?</p>
+            <a href="">Clique aqui!</a>
         </aside>
 
         <footer>
