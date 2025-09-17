@@ -8,28 +8,8 @@
     </head>
 
     <body>
-        <div id="imgFixedXie">
-            <img src="imagens/xieChibi.jpg" alt="" width="65px" height="65px">
-        </div>
-
-        <div id="imgFixedHua">
-            <img src="imagens/huaChibi.jpg" alt="" width="65px" height="65px">
-        </div>
-
-        <div id="janela">
-            <img src="imagens/imagemFlutuante.jpg" alt="" width="150" height="250">
-        </div>
-
-        <div id="apresentacao">
-            <h1>TGCF WORLD</h1> 
-            
-            <h2>Este site é dedicado a obra Tian Guan Ci Fu(TGCF, Heaven Official's Blessing)</h2>
-            
-        </div>
-
-        <div id="imagemTopo">
-            <img src="imagens/TGCFimg2.jpg" alt="">
-        </div>
+        
+        <?php include "header.php"?>
         
         <div id="Sobre">
                     <h3>Sobre a obra</h3>
@@ -128,17 +108,7 @@
 
         <a href="h5.html" id="h5Page">HMTL5 teste</a>
 
-        <div id="voltarInicio">
-            <button><a href="index.html">Voltar ao inicio</a></button>
-        </div>
-
-        <div id="final">
-            <h3>Fim do site! :)</h3>
-        </div>
-
-        
-
-        
+        <?php include "header.php"?>
     </body>
 
     <script>
