@@ -10,7 +10,7 @@
 
 <body>
 
-    <?php include "header.php"?>
+    <?php include "pages/header.php"?>
 
     <div id="texto">
         <h1>Xie Lian cansou de rir e chorar, então pegou sua espada e fish fish fish.</h1>
@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <?php include "footer.php"?>
+    <?php include "pages/footer.php"?>
     
 </body>
 

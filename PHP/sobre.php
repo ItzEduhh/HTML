@@ -8,7 +8,7 @@
 
     <body>
 
-        <?php include "header.php"?>
+        <?php include "pages/header.php"?>
 
         <div id="xieHistoria">
             <h2>História de Xie Lian</h2>
@@ -146,14 +146,14 @@
         </div>
 
         <div id="easterEgg">
-            <button><a href="easterEgg.html" style="color:black">Deseja ver um Easter-Egg???</a></button>
+            <button><a href="easterEgg.php" style="color:black">Deseja ver um Easter-Egg???</a></button>
         </div>
 
         <div id="final">
             <h3>Fim do site! :)</h3>
         </div>
 
-        <?php include "footer.php"?>
+        <?php include "pages/footer.php"?>
 
     </body>
 

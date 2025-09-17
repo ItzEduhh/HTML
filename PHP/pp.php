@@ -10,7 +10,7 @@
 
 <body>
     
-    <?php include "header.php"?>
+    <?php include "pages/header.php"?>
 
     <div id="menu">
 
@@ -33,11 +33,7 @@
 
     </div>
 
-    <div id="final">
-        <h3>Fim do site! :)</h3>
-    </div>
-
-    <?php include "footer.php"?>
+    <?php include "pages/footer.php"?>
 
 </body>
 

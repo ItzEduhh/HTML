@@ -9,7 +9,7 @@
 
     <body>
         
-        <?php include "header.php"?>
+        <?php include "pages/header.php"?>
         
         <div id="Sobre">
                     <h3>Sobre a obra</h3>
@@ -29,7 +29,7 @@
 
         <div>
 
-            <button onclick><a href="sobre.html">Saiba mais</a></button>
+            <button onclick><a href="sobre.php">Saiba mais</a></button>
         </div>
                 
         <div id="personagens">
@@ -45,7 +45,7 @@
                 <li><strong>Pei Ming</strong></li>
             </ul>
 
-            <button onclick><a href="pp.html">Mais informações</a></button>
+            <button onclick><a href="pp.php">Mais informações</a></button>
         </div>
 
         <div id="autora">
@@ -106,9 +106,9 @@
 
         <br>
 
-        <a href="h5.html" id="h5Page">HMTL5 teste</a>
+        <a href="h5.php" id="h5Page">HMTL5 teste</a>
 
-        <?php include "header.php"?>
+        <?php include "pages/footer.php"?>
     </body>
 
     <script>

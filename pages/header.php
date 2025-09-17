@@ -7,9 +7,7 @@
             <img src="imagens/huaChibi.jpg" alt="" width="65px" height="65px">
         </div>
 
-        <div id="janela">
-            <img src="imagens/imagemFlutuante.jpg" alt="" width="150" height="250">
-        </div>
+        
 
         <div id="apresentacao">
             <h1>TGCF WORLD</h1> 

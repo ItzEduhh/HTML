@@ -1,7 +1,7 @@
 <footer>
 
     <div id="voltarInicio">
-        <button><a href="index.html">Voltar ao inicio</a></button>
+        <button><a href="index.php">Voltar ao inicio</a></button>
     </div>
 
     <div id="final">

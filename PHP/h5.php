@@ -13,7 +13,7 @@
 
     <body>
         
-        <?php include "header.php"?>
+        <?php include "pages/header.php"?>
 
         <nav>
             <img src="imagens/pp.jpg" alt="Imagem personagens" width="200" height="150" id="imgPP">
@@ -56,7 +56,7 @@
             <a href="">Clique aqui!</a>
         </aside>
 
-        <?php include "footer.php"?>
+        <?php include "pages/footer.php"?>
     </body>
 
 </html>

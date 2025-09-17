@@ -9,7 +9,7 @@
 
 <body>
 
-    <?php include "header.php"?>
+    <?php include "pages/header.php"?>
 
     <div class="flex-container">
         <div class="flex-item">Xie</div>
@@ -41,7 +41,7 @@
         <button class="flex-item" onclick>Clique aqui</button>
     </div>
 
-    <?php include "footer.php"?>
+    <?php include "pages/footer.php"?>
    
 
 </body>
