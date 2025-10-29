@@ -18,6 +18,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Usuários</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lista.css">
 </head>
 <body>
 
@@ -27,7 +28,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <h1>Administradores cadastrados</h1>
 
         <?php if (count($usuarios) > 0): ?>
-            <table border="1" cellpadding="8" cellspacing="0">
+            <table border="2" cellpadding="8" cellspacing="0">
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
@@ -58,6 +59,8 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php else: ?>
             <p>Nenhum usuário cadastrado ainda.</p>
         <?php endif; ?>
+
+        <?php include "pages/footer.php"; ?>
     </div>
 
 </body>
