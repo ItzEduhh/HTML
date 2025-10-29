@@ -52,10 +52,6 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php endforeach; ?>
             </table>
         
-        <div>
-            <button onclick><a href="login2.php">voltar</a></button>
-        </div>
-        
         <?php else: ?>
             <p>Nenhum usuário cadastrado ainda.</p>
         <?php endif; ?>

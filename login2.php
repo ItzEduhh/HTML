@@ -18,7 +18,7 @@
     <?php include "pages/header.php"?>
 
     <div id=login2>
-        <h1>Adicionar conta de <br> Administrador</h1>
+        <h1>Adicionar conta</h1>
 
         <form action="receber.php" method="POST">
             <input name="nome" type="text" placeholder="Nome de usuário"><br><br>
@@ -26,13 +26,6 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-    
-    <button id="listaLogin">
-      	<a href="listar.php">Lista das contas</a>
-	</button>
-    
-    <?php include "pages/footer.php"?>
-
 </body>
 
 <script>

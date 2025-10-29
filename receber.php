@@ -17,7 +17,7 @@ if ($nome && $email) {
         // Mensagem de sucesso e redirecionamento via JS
         echo "<script>
             alert('Usuário cadastrado com sucesso!');
-            window.location.href = 'listar.php';
+            window.location.href = 'index.php';
         </script>";
     } else {
         echo "<script>alert('Erro ao cadastrar usuário!');</script>";
