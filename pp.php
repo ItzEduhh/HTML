@@ -10,18 +10,7 @@
 
 <body>
     
-    <div id="imgFixedXie">
-        <img src="imagens/xieChibi.jpg" alt="" width="65px" height="65px">
-    </div>
-
-    <div id="imgFixedHua">
-        <img src="imagens/huaChibi.jpg" alt="" width="65px" height="65px">
-    </div>
-
-    <div id="topo">
-        <h1>TGCF WORLD</h1>
-        <h2>Personagens</h2>
-    </div>
+    <?php include "pages/header.php"?>
 
     <div id="menu">
 
@@ -44,9 +33,7 @@
 
     </div>
 
-    <div id="final">
-        <h3>Fim do site! :)</h3>
-    </div>
+    <?php include "pages/footer.php"?>
 
 </body>
 

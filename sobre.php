@@ -8,20 +8,7 @@
 
     <body>
 
-        <div id="imgFixedXie">
-            <img src="imagens/xieChibi.jpg" alt="" width="65px" height="65px">
-        </div>
-
-        <div id="imgFixedHua">
-            <img src="imagens/huaChibi.jpg" alt="" width="65px" height="65px">
-        </div>
-
-        <div id="apresentacao">
-            <h1>TGCF WORLD</h1> 
-            
-            <h2>História</h2>
-            
-        </div>
+        <?php include "pages/header.php"?>
 
         <div id="xieHistoria">
             <h2>História de Xie Lian</h2>
@@ -158,13 +145,7 @@
 
         </div>
 
-        <div id="easterEgg">
-            <button><a href="easterEgg.html" style="color:black">Deseja ver um Easter-Egg???</a></button>
-        </div>
-
-        <div id="final">
-            <h3>Fim do site! :)</h3>
-        </div>
+        <?php include "pages/footer.php"?>
 
     </body>
 
