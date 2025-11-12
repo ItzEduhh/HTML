@@ -1,5 +1,17 @@
-<!DOCTYPE html>
+<?php
+require_once 'conexao.php';
 
+$conexao = new Conexao();
+$pdo = $conexao->conectar();
+
+$sql = "SELECT * FROM wiki_textos ORDER BY id ASC";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+
+$textos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 
     <head>
@@ -21,23 +33,10 @@
         </div>
         
         <div id="Sobre">
-                    <h3>Sobre a obra</h3>
-
-                    <i>Resumo da trama</i>
-
-                    <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
-                        dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
-                        novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
-                        Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
-                        Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
-                        Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
-                        o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
-
-                    </p>
-                </div>
+            <?php if (isset($textos[2])) echo $textos[2]['conteudo']; ?>
+        </div>
 
         <div>
-
             <button onclick><a href="sobre.php">Saiba mais</a></button>
         </div>
                 
@@ -58,15 +57,7 @@
         </div>
 
         <div id="autora">
-            <h3>Sobre a Autora e a Obra</h3>
-
-            <p><i>Mò Xiāng Tóng Xiù</i>, também conhecida apenas como MXTX, originalmente
-                escreveu TGCF como uma fanfic. Após um tempo,
-                sua obra começou a ficar muito conhecida, então ela publicou TGCF como uma triologioa 
-                de livros, dividindo seus capítulos em 5 livros na versão chinesa e 8 livros na em inglês.
-            </p>
-
-            <p>Além disso, a autora já possuía outras obras, sendo elas:</p>
+            <?php if (isset($textos[3])) echo $textos[3]['conteudo']; ?>
 
             <ul style="list-style-type:square" >
                 <li><i><strong>Scums Villain's Self Saving System(SVSSS)</strong></i></li>
@@ -75,9 +66,7 @@
                 <img id="mdzsImg" src="imagens/MDZSimg.jpg" alt="" width="300">
             </ul>
 
-            <p>Apesar de apenas três obras, MXTX conseguiu conquistar um enorme público, principalmente com TGCF,
-                que é sua obra mais famosa.
-            </p>
+            <?php if (isset($textos[4])) echo $textos[4]['conteudo']; ?>
         </div>
 
         <div id="compraLivro">

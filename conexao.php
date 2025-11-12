@@ -11,16 +11,18 @@ class Conexao {
 		try {
 
 			$conexao = new PDO(
-				"mysql:host=$this->host;dbname=$this->dbname",
-				"$this->user",
-				"$this->pass"				
+				"mysql:host=$this->host;dbname=$this->dbname;charset=utf8mb4",
+				$this->user,
+				$this->pass
 			);
+
+			$conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$conexao->exec("SET NAMES 'utf8mb4'");
 
 			return $conexao;
 
-
 		} catch (PDOException $e) {
-			echo '<p>'.$e->getMessage().'</p>';
+			echo '<p>' . $e->getMessage() . '</p>';
 		}
 	}
 }
