@@ -30,8 +30,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'email' => $usuario['email']
             ];
 
+            if ($usuario['nome'] === 'Admin' && $usuario['email'] === 'admin@gmail.com') {
+                header('Location: index2.php'); // Página do admin
+                exit;
+            }
+
             // Redireciona para a área interna (listar.php)
-            header('Location: index2.php');
+            header('Location: index_user.php');
             exit;
         } else {
             $error = 'Usuário ou email não encontrados.';
